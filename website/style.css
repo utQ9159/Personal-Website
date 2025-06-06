@@ -1,0 +1,380 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.05); /* seffaf beyaz */
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+  border: 2px solid rgba(255, 255, 255, 0.18); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo-container {
+    flex-shrink: 0;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px; /* Butonlar arasi bosluk */
+}
+
+.nav-button {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%; 
+}
+
+.top-right-buttons {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+.hero-section {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 40px 20px;
+    border-radius: 16px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    color: white;
+    gap: 32px;
+    max-width: 700px;
+    margin: 300px auto;
+    flex-wrap: wrap;
+}
+
+.hero-image .profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Başlık ortada */
+    gap: 10px;
+    max-width: 500px;
+    padding-left: 20px; /* Metin bloğunun iç sol boşluğu, resme değmesin diye */
+}
+
+.hero-title {
+    width: 100%;
+    text-align: center; 
+    margin: 0;
+}
+
+.hero-subtitles {
+    width: 100%;
+    text-align: left; 
+    margin: 0;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(4px);
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.about-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Sosyal medya linkleri için eklenen kısım */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    max-width: 400px;
+    gap: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+.social-links h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px 24px;
+    justify-content: center;
+    max-width: 360px;
+}
+
+.social-links li {
+    margin: 0;
+}
+
+.social-links a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+}
+
+.experience-section {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  text-align: left;
+}
+
+.experience-section h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.experience-intro {
+  font-size: 16px;
+  margin-bottom: 24px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.experience-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 32px;
+}
+
+.exp-btn {
+  flex: 1 1 120px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 14px 24px;
+  border-radius: 12px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  user-select: none;
+}
+
+.exp-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.exp-btn.active {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+  font-weight: 600;
+}
+
+.experience-content .exp-text {
+  display: none;
+  font-size: 16px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.experience-content .exp-text.active {
+  display: block;
+}
+
+.activities-section {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  text-align: left;
+}
+
+.activities-section h3 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.activities-intro {
+  font-size: 16px;
+  margin-bottom: 24px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.activities-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 32px;
+}
+
+.act-btn {
+  flex: 1 1 120px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 14px 24px;
+  border-radius: 12px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  user-select: none;
+}
+
+.act-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.act-btn.active {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black;
+  font-weight: 600;
+}
+
+.activities-contents .activity-content {
+  display: none;
+  font-size: 16px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.activities-contents .activity-content.active {
+  display: block;
+}
+
+.dark-theme {
+  background-color: #111;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+.menu {
+  flex-direction: column;
+  position: static;
+  transform: none;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.hero-section {
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+.about-section {
+  margin-bottom: 400px;
+}
+
+.experience-section {
+  margin-bottom: 400px;
+}
+
+.activities-section {
+  margin-bottom: 400px;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: rotate(20deg);
+}

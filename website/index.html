@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karpat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo-container">
+            <img src="images/karpat logo gecici.png" alt="Karpat Logosu" class="logo">
+        </div>
+        <nav class="menu">
+            <button class="nav-button" data-target="about">Hakkımda</button>
+            <button class="nav-button" data-target="experience">Tecrübe</button>
+            <button class="nav-button" data-target="activities">Aktiviteler</button>
+        </nav>
+
+        <div class="top-right-buttons">
+            <button class="nav-button">🌐 TR/EN</button>
+            <button class="nav-button" id="toggle-theme">🌗 Tema</button>
+        </div>
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-image">
+            <img src="images/karpatcat.jpg" alt="Utku" class="profile-photo">
+        </div>
+        <div class="social-links">
+        <h1 class="hero-title">Hoş Geldiniz</h1>
+        <ul>
+            <li><a href="https://github.com/utQ9159" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/utku-karpat-b6b093226/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://x.com/utkkarpat" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="https://www.instagram.com/utkukarpat/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        </ul>
+        </div>
+    </main>
+
+    <section class="about-section" id="about">
+        <h2>Hakkımda</h2>
+        <p>
+            Merhaba, ben Utku 24 yaşındayım. Lojistik mezunu hırslı, çalışkan ve üretken bir geliştirici adayıyım.<br>
+        Yazılım dünyasında kendimi sürekli geliştirerek ilerliyor, özellikle web tasarımı alanında derinleşmeye odaklanıyorum.<br>
+        Teknolojiye ve oyunlara duyduğum tutku, hızlı ve kolay öğrenme ve yaratıcı çözümler üretme konusundaki motivasyonumun temelini oluşturuyor.</p>
+    </section>
+
+    <section class="experience-section" id="experience">
+        <h2>Tecrübelerim</h2>
+        <p class="experience-intro"></p>
+
+        <div class="experience-buttons">
+            <button class="exp-btn active" data-exp="exp1">Dil</button>
+            <button class="exp-btn" data-exp="exp2">Staj</button>
+            <button class="exp-btn" data-exp="exp3">İş</button>
+            <button class="exp-btn" data-exp="exp4">E-Spor</button>
+        </div>
+
+        <div class="experience-content">
+            <div id="exp1" class="exp-test active">
+                Dil öğrenme yolculuğuma lisede İngilizce sınavından neredeyse 0 puan almam sonucu başladım<br> 
+                bu durumu bir engel olarak görmek yerine azimle üzerine gittim. Bugün, dünyanın dört bir yanından<br>
+                edindiğim arkadaşlarımla akıcı ve yüksek seviyede İngilizce iletişim kurabiliyor ve onlarla sohbet edebiliyorum.<br>
+
+                Yabancı dil öğrenme tutkum tek bir dille sınırlı kalmadı; üniversitede aldığım işaret dili dersleri<br>
+                özel bir dil okulundan aldığım Almanca dersleri ve evde kendi başıma çalıştığım Fransızca ile Norveççe dilleri<br>
+                İngilizce dışındaki bu dillerde henüz bir iddiam bulunmamasına rağmen, gelecekte bu dilleri öğrenmeyi planlıyorum.
+            </div>
+            <div id="exp2" class="exp-text">
+                Lise yıllarımda Türkiye'nin en büyük dış ticaret firmalarından biri olan Orkun Grup'ta staj yapma fırsatı<br>
+                buldum. O dönemde firmanın ilk stajyeri olmam nedeniyle, ilk günüm daha çok çalışanların işleyişini<br> 
+                gözlemlemekle geçti. İkinci gün ise faturalar, belgeler ve CMR evrakları hakkında detaylı bilgiler aldıktan<br>
+                sonra dosyalama sürecine dahil oldum. Hızlı öğrenme yeteneğim sayesinde, kısa sürede tüm dosyalardan<br>
+                sorumlu oldum. Başlarda bu büyük sorumluluk gözümü korkutsa da, binlerce belgenin arasından tek bir<br>
+                evrakın kaybolmasının veya zamanında bulunamamasının yaratacağı sonuçların farkındalığıyla titizlikle çalıştım.
+
+                Üniversite stajımı da aynı firmada gerçekleştirdim. Bu kez sisteme aşina olmam nedeniyle, daha karmaşık<br>
+                lojistik süreçlerin eğitimini aldım. Sistem, başlarda samanlıkta iğne aramak gibiydi; elimdeki belgeler üzerinde<br>
+                yer alan satırlardan gerekli malzemeleri bulmak zorundaydım. Bu deneyimlerim sayesinde lojistik alanındaki<br> 
+                temel bilgilerimi sağlamlaştırdım ve bu değerli süreçte firmadaki ekip arkadaşlarımın destekleriyle hem<br>
+                profesyonel hem de keyifli zamanlar geçirdim. Orkun Grup’a ve çalışma arkadaşlarıma, kariyerime kattıkları<br> 
+                değerler için teşekkürlerimi sunuyorum.
+            </div>
+            <div id="exp3" class="exp-text">
+                Kariyer yolculuğum boyunca farklı sektörlerde edindiğim çeşitli görevler sayesinde hem iş disiplini hem de<br>
+                insan ilişkileri açısından güçlü bir temel oluşturdum. İlk olarak LC Waikiki’de e-ticaret sorumlusu olarak<br>
+                görev aldım. Bu rolde temel sorumluluğum, siparişlerin eksiksiz ve doğru şekilde hazırlanarak zamanında paketlenmesiydi.<br>
+                Hızlı tempolu ve sürekli hareket gerektiren bu ortamda çalışmak, yoğun iş koşullarına uyum sağlama ve zaman yönetimi<br>
+                becerilerimi önemli ölçüde geliştirdi. Sonrasında bir eczanede çırak olarak çalıştım. Kısa sürede hem ilaçlar<br>
+                hem de sistemsel süreçler hakkında kapsamlı bilgi edinme fırsatı buldum. Uzun çalışma saatlerine rağmen motivasyonumu<br>
+                kaybetmeden görevimi sürdürdüm. Aynı zamanda, hastalarla birebir iletişim kurmam sayesinde empati yeteneğim ve<br>
+                yüz yüze iletişim becerilerim büyük ölçüde güçlendi. Son olarak müşteri hizmetleri alanında görev aldım.<br>
+                Günlük ortalama 50 müşteriyle gerçekleştirdiğim görüşmeler sayesinde karşı tarafı dikkatle dinleme, ihtiyaçlarını anlama<br>
+                ve ikna etme becerilerimi pekiştirdim. Bununla birlikte hızlı çözüm üretme ve müşteri memnuniyetini sağlama konularında da<br>
+                değerli deneyimler edindim. Farklı alanlarda kazandığım bu tecrübeler, çok yönlü düşünebilme, hızlı adapte olabilme ve<br>
+                insan ilişkilerinde güçlü bir duruş sergileyebilme becerilerimi şekillendirdi.
+            </div>
+            <div id="exp4" class="exp-text">
+                Oyun dünyasında yıllar süren tutkumun bir yansıması olarak, çocukluk hayalim olan profesyonel oyunculuk serüvenine<br>
+                Apex Legends ile adım attım. Başlangıçta kendi takımımı kurmak amacıyla yüzlerce oyuncuyla denemelere ve turnuvalara katıldım.<br>
+                Bu yolculuk, yalnızca rekabet değil, aynı zamanda bugün hâlâ görüştüğüm birçok değerli insanla tanışmama da vesile oldu.<br>
+                Türkiye'de oyunun henüz büyük bir kitlesi olmamasına rağmen, bu tutkuyu benimle paylaşan arkadaşlarımla bir girişimde bulunarak<br>
+                kendi topluluğumuzu kurduk. Kısa sürede 500’ü aşkın üyeye ulaşan bu toplulukla, başarılı şekilde birçok etkinlik organize ettik<br>
+                ve oyuncuların bir araya geldiği dinamik bir ortam oluşturduk. Bu topluluğu büyütmek ve sürdürülebilir kılmak adına çeşitli firmalar<br>
+                ve bireylerle sponsorluk görüşmeleri yaptık. Anlaştığımız sponsorların ve kendi kaynaklarımızın desteğiyle düzenlediğimiz organizasyonlarla,<br>
+                oyuna olan ilgiyi artırmayı ve rekabet ortamını canlandırmayı başardık. Bu süreçte kurmuş olduğum takımım ile birlikte birçok yerel turnuvada<br>
+                başarılar elde ettik. Kazandığımız tecrübeler ve yükselen performansımız sayesinde, global sahnelere katılma fikrini gündeme getirdim.<br>
+                Bu fikre inanan oyuncularla birlikte aylar süren disiplinli bir hazırlık dönemine girdik. Sonunda, Avrupa’nın en iyi takımlarıyla aynı sahnede<br>
+                yer aldık ve üç kez final oynama, 500+ takım arasında ilk 20’ye girme gibi önemli başarılar elde ettik. İlk profesyonel sözleşmemi,<br>
+                2023 yılında Istanbul Wildcats (günümüzde Bushido Wildcats) takımıyla imzaladım. Bu süre zarfında hem ulusal hem de uluslararası turnuvalarda boy gösterdik.<br>
+                Bir oyuncudan fazlası olduğumun her zaman farkındaydım. Bu yüzden yalnızca kendi gelişimime değil, takım arkadaşlarımın ve çevremdeki kişilerin<br>
+                gelişimine de odaklandım. Onlara koçluk yaptım, eksiklerini analiz ettim ve en iyi versiyonlarına ulaşmaları için elimden geleni yaptım.<br>
+                Geride bıraktığım 3 yıl, sayısız başarı, yüzlerce değerli dostluk ve unutulmaz anıyla birlikte e-spor kariyerimi gönül rahatlığıyla sonlandırdım.
+            </div>
+        </div>
+    </section>
+
+    <section class="activities-section" id="activities">
+        <h3>Aktiviteler</h3>
+        <p class="activities-intro"></p>
+
+        <div class="activities-buttons">
+            <button class="act-btn active" data-activity="travel">Seyahat Etmek</button>
+            <button class="act-btn" data-activity="music">Müzik Dinlemek</button>
+            <button class="act-btn" data-activity="gaming">Video Oyunları</button>
+        </div>
+        
+        <div class="activities-contents">
+            <div id="travel" class="activity-content active">
+                Türkiye'nin birçok bölgesini keşfettim ve her şehirde yerel kültürü yakından tanıma fırsatı buldum. Gittiğim yerlerden hatıralar toplamak ve yöresel<br>
+                lezzetleri tatmak benim için vazgeçilmez. Henüz yurt dışına çıkmamış olsam da, uzun bir seyahat listem var ve sıradaki hedefim bu rotaları adım adım tamamlamak.
+            </div>
+            <div id="music" class="activity-content">
+                Müzik, hayatımın her anına eşlik eden vazgeçilmez bir tutku. Çocukken oynadığım video oyunlarından seyahatlere, spordan kitap okumaya kadar her anımda<br>
+                ritimlerin etkisini hissettim. Şarkı sözlerinden ziyade müziğin melodik yapısı ve ritmi beni büyülüyor. Her ne kadar bir enstrüman çalmasam da,<br>
+                çocukluğumdan beri keman ve piyanoya özel bir ilgim var. Bir gün bu iki enstrümanı ileri seviyede çalmayı hedefliyorum.
+            </div>
+            <div id="gaming" class="activity-content">
+                Video oyunlarıyla tanışmam, ilkokul yıllarında dağıtılan bir atari sayesinde oldu ve o günden beri bu tutku hayatımda büyük bir yer kaplıyor.<br>
+                8-9 yaşlarındayken küçük ekranlı bir notebook’ta oynadığım 2 boyutlu aksiyon-RYO oyunu AQW ile başladığım bu serüven, zamanla gelişerek<br>
+                onlarca farklı türde oyunla devam etti. Kendime özel bir bilgisayar edinerek, sayısız oyun deneyimledim. Bugün bile video oyunları hem sosyal çevremi<br>
+                hem de bakış açımı şekillendirmeye devam ediyor. Hayatımın her döneminde, yaşımdan bağımsız olarak, içimdeki bu tutkuyu taşımaya devam edeceğim.
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+    <p>&copy; 2025 Utku Karpat | Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
